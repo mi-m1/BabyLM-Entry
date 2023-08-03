@@ -1,5 +1,5 @@
 #!/bin/bash
-export HF_HOME=/mnt/parscratch/users/acq22zm/.cache
+export HF_HOME=../../.cache
 
 LD_LIBRARY_PATH=""
 python pretrain-tc-gpt-small-fi.py \

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export HF_HOME=../../.cache
+
+LD_LIBRARY_PATH=""
+python pretrain-tc-gpt-small-fi.py \
+--tc-scheme cl
+--output-dir ../../babylm-models/cl-ttr-gpt-small-1go \
+--max-positions 512 \
+--embed-dimension 768 \
+--layers 12 \
+--attention-heads 12 \
+--lr 3e-5 \
+--bsz 64 \
